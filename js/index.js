@@ -38,5 +38,51 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+
+let header = document.querySelector('header');
+
+let navLinks = document.querySelectorAll('header nav a');
+let navArray = Array.from(navLinks);
+
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const title = document.querySelector('.cta-text h1');
+title.textContent = 'Dom \n Is \n Awesome'
+
+const btn = document.querySelector('cta button');
+btn.textContent = 'Get Started'
+
+const titleImg = document.querySelector('#cta-img');
+titleImg.src = 'img/header-img.png'
+
+const topConTitl = document.querySelectorAll('top-content h4');
+topConTitl[0].textContent = 'Features'
+topConTitl[1].textContent = 'About'
+
+const topConPara = document.querySelectorAll('.top-content p');
+topConPara[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+topConPara[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const midImg = document.getElementById('middle-img');
+midImg.src = 'img/mid-page-accent.jpg'
+
+const bottomTitle = document.querySelectorAll('.bottom-content h4');
+bottomTitle[0].textContent = 'Services'
+bottomTitle[1].textContent = 'Product'
+bottomTitle[2].textContent = 'Vision'
+
+const botText = document.querySelectorAll('.bottom-content p');
+botText[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+botText[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+botText[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis'
+
+const conTitle = document.querySelector('.contact h4');
+conTitle.textContent = 'Contact'
+
+
+const conAddress = document.querySelectorAll('.contact p');
+conAddress[0].textContent = '123 Way 456 Street \n Somewhere, USA'
+conAddress[1].textContent = '1 (888) 888-888'
+conAddress[2].textContent = 'sales@greatidea.io'
