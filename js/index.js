@@ -40,28 +40,59 @@ const siteContent = {
 // Example: Update the img src for the logo
 
 
-let header = document.querySelector('header');
 
 let navLinks = document.querySelectorAll('header nav a');
 let navArray = Array.from(navLinks);
+
+
+navArray[0].textContent = 'Services';
+navArray[1].textContent = 'Products';
+navArray[2].textContent = 'Vision';
+navArray[3].textContent = 'Features';
+navArray[4].textContent = 'About';
+navArray[5].textContent = 'Contact';
+
+navArray[0].style.color = 'green';
+navArray[1].style.color = 'green';
+navArray[2].style.color = 'green';
+navArray[3].style.color = 'green';
+navArray[4].style.color = 'green';
+navArray[5].style.color = 'green';
+console.log(navArray);
+// const newNav1 = document.createElement('a');
+// newNav1.textContent = 'Create';
+// newNav1.style.color = 'blue';
+
+
+// newNav1.appendChild(navArray);
+
 
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const title = document.querySelector('.cta-text h1');
-title.textContent = 'Dom \n Is \n Awesome'
+title.textContent = 'Dom \n Is \n Awesome';
+title.style.width = '100px';
+title.style.marginRight = '200px';
 
-const btn = document.querySelector('cta button');
-btn.textContent = 'Get Started'
+
+
+const btn = document.querySelector('.cta button');
+btn.textContent = 'Get Started';
+btn.addEventListener('click', function () {
+  btn.style.background = 'blue';
+  console.log('its bluuuUUUUUEEE!!');
+})
 
 const titleImg = document.querySelector('#cta-img');
-titleImg.src = 'img/header-img.png'
+titleImg.src = 'img/header-img.png';
 
-const topConTitl = document.querySelectorAll('top-content h4');
-topConTitl[0].textContent = 'Features'
-topConTitl[1].textContent = 'About'
 
-const topConPara = document.querySelectorAll('.top-content p');
+const topConTitl = document.querySelectorAll('.text-content h4');
+topConTitl[0].textContent = 'Features';
+topConTitl[1].textContent = 'About';
+
+const topConPara = document.querySelectorAll('.text-content p');
 topConPara[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 topConPara[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
